@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RatingView" customModule="RatingsView" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundColourView" destination="yJl-xo-d6d" id="sb1-Cm-SyD"/>
+                <outlet property="colouredView" destination="cjk-Wd-Rfh" id="7UX-z8-IKI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="37"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJl-xo-d6d">
+                    <rect key="frame" x="190" y="0.0" width="185" height="37"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjk-Wd-Rfh">
+                            <rect key="frame" x="0.0" y="0.0" width="185" height="37"/>
+                            <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dEe-Rx-tl1">
+                            <rect key="frame" x="0.0" y="0.0" width="185" height="37"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rating_star" translatesAutoresizingMaskIntoConstraints="NO" id="qPJ-aG-u9J">
+                                    <rect key="frame" x="0.0" y="0.0" width="37" height="37"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rating_star" translatesAutoresizingMaskIntoConstraints="NO" id="U6M-Sc-gHx">
+                                    <rect key="frame" x="37" y="0.0" width="37" height="37"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rating_star" translatesAutoresizingMaskIntoConstraints="NO" id="Ll4-f4-6bY">
+                                    <rect key="frame" x="74" y="0.0" width="37" height="37"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rating_star" translatesAutoresizingMaskIntoConstraints="NO" id="fyF-9W-rNx">
+                                    <rect key="frame" x="111" y="0.0" width="37" height="37"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rating_star" translatesAutoresizingMaskIntoConstraints="NO" id="hqf-hL-PdK">
+                                    <rect key="frame" x="148" y="0.0" width="37" height="37"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="hqf-hL-PdK" secondAttribute="height" multiplier="1:1" id="9SL-8W-8as"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="cjk-Wd-Rfh" firstAttribute="trailing" secondItem="dEe-Rx-tl1" secondAttribute="trailing" id="0DB-Qc-tKM"/>
+                        <constraint firstItem="cjk-Wd-Rfh" firstAttribute="top" secondItem="yJl-xo-d6d" secondAttribute="top" id="50q-fH-vhL"/>
+                        <constraint firstItem="dEe-Rx-tl1" firstAttribute="top" secondItem="yJl-xo-d6d" secondAttribute="top" id="M6A-jc-SgF"/>
+                        <constraint firstAttribute="bottom" secondItem="cjk-Wd-Rfh" secondAttribute="bottom" id="U2s-ZB-MuE"/>
+                        <constraint firstItem="dEe-Rx-tl1" firstAttribute="leading" secondItem="yJl-xo-d6d" secondAttribute="leading" id="Z7c-AJ-EQM"/>
+                        <constraint firstAttribute="width" secondItem="yJl-xo-d6d" secondAttribute="height" multiplier="5:1" id="aiR-VQ-kf8"/>
+                        <constraint firstAttribute="bottom" secondItem="dEe-Rx-tl1" secondAttribute="bottom" id="keW-Re-NYi"/>
+                        <constraint firstAttribute="trailing" secondItem="dEe-Rx-tl1" secondAttribute="trailing" id="s6r-Zd-7qU"/>
+                        <constraint firstItem="cjk-Wd-Rfh" firstAttribute="leading" secondItem="yJl-xo-d6d" secondAttribute="leading" id="yJO-DQ-jn4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="yJl-xo-d6d" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" id="6jg-Ct-h8g"/>
+                <constraint firstItem="yJl-xo-d6d" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Hhz-6p-GyA"/>
+                <constraint firstAttribute="bottom" secondItem="yJl-xo-d6d" secondAttribute="bottom" id="uAY-ku-xLP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yJl-xo-d6d" secondAttribute="trailing" id="w0x-ed-qU5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="-465.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="rating_star" width="48" height="48"/>
+    </resources>
+</document>

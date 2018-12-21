@@ -12,6 +12,8 @@
 		1494289621CD00AC00EAF935 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1494289421CD00AC00EAF935 /* Main.storyboard */; };
 		1494289821CD00AD00EAF935 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1494289721CD00AD00EAF935 /* Assets.xcassets */; };
 		1494289B21CD00AD00EAF935 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1494289921CD00AD00EAF935 /* LaunchScreen.storyboard */; };
+		149428A421CD00E700EAF935 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149428A221CD00E700EAF935 /* RatingView.swift */; };
+		149428A521CD00E700EAF935 /* RatingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 149428A321CD00E700EAF935 /* RatingView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		1494289721CD00AD00EAF935 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1494289A21CD00AD00EAF935 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1494289C21CD00AD00EAF935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		149428A221CD00E700EAF935 /* RatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		149428A321CD00E700EAF935 /* RatingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RatingView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				1494289021CD00AC00EAF935 /* AppDelegate.swift */,
 				1494289221CD00AC00EAF935 /* ViewController.swift */,
+				149428A221CD00E700EAF935 /* RatingView.swift */,
+				149428A321CD00E700EAF935 /* RatingView.xib */,
 				1494289421CD00AC00EAF935 /* Main.storyboard */,
 				1494289721CD00AD00EAF935 /* Assets.xcassets */,
 				1494289921CD00AD00EAF935 /* LaunchScreen.storyboard */,
@@ -125,6 +131,7 @@
 				1494289B21CD00AD00EAF935 /* LaunchScreen.storyboard in Resources */,
 				1494289821CD00AD00EAF935 /* Assets.xcassets in Resources */,
 				1494289621CD00AC00EAF935 /* Main.storyboard in Resources */,
+				149428A521CD00E700EAF935 /* RatingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				149428A421CD00E700EAF935 /* RatingView.swift in Sources */,
 				1494289321CD00AC00EAF935 /* ViewController.swift in Sources */,
 				1494289121CD00AC00EAF935 /* AppDelegate.swift in Sources */,
 			);
